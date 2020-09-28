@@ -4,7 +4,7 @@ const router = express.Router();
 
 router.get('/', (request, response) => {
   console.log('I see you');
-  response.send('hola bebe');
+  response.send('ok');
 });
 
 router.get('/status', (request, response) => {
