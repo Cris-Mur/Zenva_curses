@@ -8,7 +8,7 @@ router.get('/', (request, response) => {
 });
 
 router.get('/status', (request, response) => {
-  response.status(200).json({ message: 'invalid body', status: 200 });
+  response.status(200).json({ message: 'ok', status: 200 });
 });
 
 router.post('/signup', (request, response, next) => {
@@ -40,7 +40,8 @@ router.post('/token', (request, response) => {
     response.status(400).json({ message: 'invalid body', status: 400 });
   } else {
     const { refreshToken } = request.body;
-    response.status(200).json({ message: `refresh token requested for token: ${refreshToken}`, status: 200 });
+    response.status(200).json(
+      { message: `refresh token requested for token: ${refreshToken}`, status: 200 });
   }
 });
 
