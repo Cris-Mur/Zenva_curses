@@ -1,4 +1,6 @@
 # ENVIROMENT FILE
 **/.env
 # NODE - FILES
+# INSTALLATION FILES
 **/node_modules/**
+**/package-lock.json
